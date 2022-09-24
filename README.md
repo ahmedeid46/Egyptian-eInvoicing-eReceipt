@@ -19,10 +19,10 @@ php artisan vendor:publish --provider="Ahmedeid\EInvoiceEg\EInvoiceEgServiceProv
 ```
 add to env file 
 ```dotenv
-API_BASE_URL:https://api.preprod.invoicing.eta.gov.eg
-ID_SRV_BASE_URL:https://id.preprod.eta.gov.eg
-CLIENT_ID:******************
-CLIENT_SECRET:********************************
+API_BASE_URL=https://api.preprod.invoicing.eta.gov.eg
+ID_SRV_BASE_URL=https://id.preprod.eta.gov.eg
+CLIENT_ID=******************
+CLIENT_SECRET=********************************
 ```
 ## Usage
 
