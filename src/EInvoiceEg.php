@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 class EInvoiceEg
 {
     // Build your next great package.
-    function login()
+    static function login()
     {
         $response = Http::post(config('e-invoice-eg.idSrvBaseUrl').'/connect/token',[
             'client_id' => config('e-invoice-eg.clientId'),
