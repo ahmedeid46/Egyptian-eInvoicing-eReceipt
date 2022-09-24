@@ -40,13 +40,9 @@ If you discover any security related issues, please email ahmed.m.eid.2001@gmail
 
 ## Credits
 
--   [ahmedeid](https://github.com/ahmedeid)
--   [All Contributors](../../contributors)
+-   [ahmedeid](https://github.com/ahmedeid46)
+
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
