@@ -1,8 +1,8 @@
-# Very short description of the package
+# Egyptian eInvoicing & eReceipt
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ahmedeid/e-invoice-eg.svg?style=flat-square)](https://packagist.org/packages/ahmedeid/e-invoice-eg)
 [![Total Downloads](https://img.shields.io/packagist/dt/ahmedeid/e-invoice-eg.svg?style=flat-square)](https://packagist.org/packages/ahmedeid/e-invoice-eg)
-![GitHub Actions](https://github.com/ahmedeid/e-invoice-eg/actions/workflows/main.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
