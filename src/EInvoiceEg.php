@@ -14,7 +14,7 @@ class EInvoiceEg
             'client_id' => config('e-invoice-eg.clientId'),
             'client_secret' => config('e-invoice-eg.clientSecret'),
         ]);
-        return $response->ok();
+        return $response->body();
 
 
 
