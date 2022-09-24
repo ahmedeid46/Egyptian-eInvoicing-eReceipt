@@ -1,2 +1,3 @@
 # ignore all logs
-*.vendor
+vendor/
+vendor/bin/
