@@ -13,7 +13,17 @@ You can install the package via composer:
 ```bash
 composer require ahmedeid/e-invoice-eg
 ```
-
+To publish Config
+```bash
+php artisan vendor:publish --provider="Ahmedeid\EInvoiceEg\EInvoiceEgServiceProvider" --tag="config"
+```
+add to env file 
+```dotenv
+API_BASE_URL:https://api.preprod.invoicing.eta.gov.eg
+ID_SRV_BASE_URL:https://id.preprod.eta.gov.eg
+CLIENT_ID:******************
+CLIENT_SECRET:********************************
+```
 ## Usage
 
 ```php
