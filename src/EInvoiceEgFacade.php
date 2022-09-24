@@ -16,6 +16,6 @@ class EInvoiceEgFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'e-invoice-eg';
+        return 'EInvoiceEg';
     }
 }
