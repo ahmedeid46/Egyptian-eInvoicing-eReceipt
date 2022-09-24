@@ -8,15 +8,14 @@ use Illuminate\Support\Facades\Http;
 class EInvoiceEg
 {
     // Build your next great package.
-    static function login()
+    protected static function login($scope)
     {
-        $response = Http::post(config('e-invoice-eg.idSrvBaseUrl').'/connect/token',[
+        $response = Http::asForm()->post(config('e-invoice-eg.idSrvBaseUrl').'/connect/token',[
+            'grant_type'=> 'client_credentials',
             'client_id' => config('e-invoice-eg.clientId'),
             'client_secret' => config('e-invoice-eg.clientSecret'),
+            'scope' =>$scope
         ]);
-        return $response->body();
-
-
-
+        return $response->object();
     }
 }
