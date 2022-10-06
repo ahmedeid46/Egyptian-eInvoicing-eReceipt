@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 class EInvoiceEg
 {
     // Build your next great package.
-    protected static function login($scope)
+    protected function login($scope)
     {
         $response = Http::asForm()->post(config('e-invoice-eg.idSrvBaseUrl').'/connect/token',[
             'grant_type'=> 'client_credentials',
@@ -18,4 +18,34 @@ class EInvoiceEg
         ]);
         return $response->object();
     }
+    static function getDocumentTypes(){
+        $auth = $this->login('InvoicingAPI');
+        $response = Http::withHeaders([
+            'Accept-Language' => 'ar',
+            'Content-type' =>'application/json',
+            'Authorization'=>$auth
+        ])->get(config('e-invoice-eg.apiBaseUrl').'/api/v1/documenttypes');
+        
+        return $response->object();
+    }
+    static function getDocumenttype($document_id){
+        $auth = $this->login('InvoicingAPI');
+        $response = Http::withHeaders([
+            'Accept-Language' => 'ar',
+            'Content-type' =>'application/json',
+            'Authorization'=>$auth
+        ])->get(config('e-invoice-eg.apiBaseUrl').'/api/v1.0/documenttypes/'.$id);
+
+        return $response->object();
+    }
+    static function getDocumentTypeVersion($document_id,$version_id){
+        $auth = $this->login('InvoicingAPI');
+        $response = Http::withHeaders([
+            'Accept-Language' => 'ar',
+            'Content-type' =>'application/json',
+            'Authorization'=>$auth
+        ])->get(config('e-invoice-eg.apiBaseUrl').'/api/v1.0/documenttypes/'.$document_id.'/versions/'.$version_id);
+        return $response->object();
+    }
+
 }
