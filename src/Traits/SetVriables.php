@@ -1,9 +1,11 @@
 <?php
 
+namespace Ahmedeid\EInvoiceEg\Traits;
+
 use Illuminate\Support\Facades\Http;
 
 
-Trait SetVriable
+Trait SetVriables
 {
     protected $documentTypeID;
     protected $documentTypeVersionID;
