@@ -25,9 +25,14 @@ CLIENT_ID=******************
 CLIENT_SECRET=********************************
 ```
 ## Usage
-
+### GetDocumentTypes
 ```php
-// Usage description here
+    $einvoice = new ETAEGCommon();
+    $getDocumentTypes = $einvoice->getDocumentTypes();
+```
+output
+```json
+
 ```
 
 ### Testing
